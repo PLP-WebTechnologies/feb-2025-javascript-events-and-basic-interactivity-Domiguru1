@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Bundle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Web Bundle</h1>
+        
+        <!-- Button that changes text/color -->
+        <div class="section">
+            <h2>Button Magic</h2>
+            <button id="magic-button" class="hover-effect">Click Me!</button>
+            <p id="button-status">Button hasn't been clicked yet</p>
+        </div>
+        
+        <!-- Image gallery -->
+        <div class="section">
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <img src="https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature" class="active">
+                <img src="https://media.istockphoto.com/id/637912692/photo/nairobi-cityscape-capital-city-of-kenya.jpg?b=1&s=612x612&w=0&k=20&c=Uji1w0b3sWm0FSmC4iNfpp0_Pd5q3z1LrbEh-WUVy9I=" alt="City">
+                <img src="https://images.pexels.com/photos/34231/antler-antler-carrier-fallow-deer-hirsch.jpg?auto=compress&cs=tinysrgb&w=600" alt="Animal">
+            </div>
+            <div class="gallery-controls">
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+        
+        <!-- Tabs -->
+        <div class="section">
+            <h2>Tab System</h2>
+            <div class="tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content active" id="tab1">
+                    <p>This is the content for Tab 1. Double click anywhere to see a secret message!</p>
+                </div>
+                <div class="tab-content" id="tab2">
+                    <p>Content for Tab 2 goes here. Try pressing the 's' key on your keyboard!</p>
+                </div>
+                <div class="tab-content" id="tab3">
+                    <p>Tab 3 content is displayed here. Long press this text for a surprise!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Keypress indicator -->
+        <div id="keypress-indicator">Press any key to see it here</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
